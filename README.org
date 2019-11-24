@@ -1,0 +1,85 @@
+** misc
+   @Peter
+ - [X] could you update how you write country of origin (i.e. "product of countryname" instead of abbreviated form)?
+ - 
+ - [X] And add price again in the comparison table as an attribute
+ - [X] Oh and add dollar sign for prices
+ - 
+ - [-] And make the horizontal slide show view more evident
+   - [X] like put the header "Related Products"
+   - [ ] like maybe even make the portion of related products have a diff background colour?
+     - [ ] and by a different colour for related products, maybe you could put save on foods green as the background
+ - 
+ - [ ] and could we add a cart icon next to "My Cart" ?
+ - 
+ - [ ] and make arrows evident in the Related Products section
+   - [ ] so put one giant right scrolling arrow
+   - [ ] and one left scrolling arrow (one arrow on each side of the horizontal slide show view)
+*** collect images into directory?
+    and update references
+*** soup data
+    natural variety and consistent
+   
+** features
+   file:search-results.html
+*** search-table                                                        :css:
+**** DONE generate                                                       :js:
+     CLOSED: [2019-11-16 Sat 22:28]
+     DOMContentLoaded eventListener
+     or
+***** STRETCH functional search bar?
+       
+*** compare-table
+**** DONE Visual appeal
+     CLOSED: [2019-11-20 Wed 18:28]
+    - [X] correct proportions with normal range of dimensions
+**** DONE bring up                                                       :js:
+     CLOSED: [2019-11-16 Sat 22:28]
+     selected items as global variables?
+***** DONE find selected items
+      CLOSED: [2019-11-16 Sat 22:27]
+***** DONE restrict on less than two items selected
+      CLOSED: [2019-11-17 Sun 14:46]
+****** Signify that at least two items must be selected?
+***** open button
+**** DONE close button                                                   :js:
+     CLOSED: [2019-11-16 Sat 22:28]
+**** rows
+***** Make header cells pretty?
+**** columns
+***** extend ondrop                                                      :js:
+***** DONE remove button                                                 :js:
+      CLOSED: [2019-11-20 Wed 18:28]
+***** TODO bold 'optimal' cell                                       :js:css:
+
+      
+**** related items
+***** CLEAN drag interaction                                             :js:
+       items to expand comparison-table
+***** display beneath the comparison-table
+    - long and wispy,
+      if it's used on touchscreen devices maximum viewport real-estate is desired. 
+***** 
+
+
+*** DONE visually appealing page?                                       :css:
+    CLOSED: [2019-11-20 Wed 18:09]
+    - [X] revamp header
+      probably just a string of spans with css specified width percentages
+    - Censensus: Don't add sidebar
+      probably just a string of divs with css specified height percentages
+** DONE template architecture                                            :js:
+   CLOSED: [2019-11-16 Sat 22:29] DEADLINE: <2019-11-16 Sat>
+   works for 
+   - [X] search-results rows
+   - [X] comparison rows
+   - [X] related items
+**** syntax
+    - [X] data
+    - [X] template
+     
+    functions
+    - [X] data interpreter
+    - [X] constructor
+    - [X] html insertion
+    - [X] onpageload trigger

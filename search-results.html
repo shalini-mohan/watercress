@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Team Watercress Save On Foods Mockup</title>
+        <link href="base.css" rel="stylesheet"/>
+        <script src="base.js"> </script>
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- TODO revamp header -->
+        <header>
+            <div >
+                <!-- Save <strong>On</strong> Foods -->
+                <img alt="" class="logo" src="save-on-foods-logo.png"/>
+            </div>
+            <span class="trim">shop departments</span>
+            <span class="trim">shop recipes</span>
+            <span class="trim"><input name="" type="text" value="Soup"/></span>
+            <span class="trim">sign in or register</span>
+            <span class="trim">reserve time slot</span>
+            <span class="trim">my cart</span>
+        </header>
+        <!-- <div>
+             Picking up at Vancouver Kerrisdale 6455 West Boulevard
+             </div> -->
+        <div class="breadcrumbs">
+            <span>Shop Home</span> > <span>Search Results</span>
+        </div>
+        <div class = "breadcrumbs">
+            Search Results: soup  (12)
+        </div>
+        <div>
+            <button class="fr compare_button hidden_until_two_selected" onclick="show_comparison_popup(event)">Compare Selected</button>
+            <!-- <button onclick="comparison_table.show(event)">Compare</button> -->
+            <!-- <button disabled class="fr">Tile</button><button class="fr"><strong>List</strong></button> -->
+        </div>
+         <!-- TODO Sidebar; reference figma -->
+        <table>
+            <thead>
+                
+            </thead>
+            <tbody class="searchResults">
+                <template> <tr>
+                    <td>
+                        <img alt="" src=""/>
+                    </td>
+
+                    <td>
+
+                        <div class="name"></div>
+                        
+                        <div><span class="mass"></span> ml</div>
+                        <div>Product of <span class="country_of_origin"></span></div>
+                    </td>
+                    <td>
+                        <div class="vl"></div>
+                        <span class="price"></span>
+                    </td>
+                    <td>
+                        <label  for="">Compare</label>
+                        <input name="" onchange="update_comparison_button(event)" type="checkbox" value=""/>
+                        <button disabled>Add to Cart</button>
+                    </td>
+
+                </tr> </template>
+            </tbody>
+        </table>
+        <div class="popup">
+            <button onclick="hide_comparison_popup(event)" class="frx">X</button>
+            <!-- <button onclick="expand_comparison_table(event)" class="fr">+</button> -->
+            <table class="compare" ondrop="add_to_comparison_items(event)" ondragover="allowDrop(event)">
+                <template><tbody>
+                    <tr> <th></th>
+                        <template class="images"><td>
+                            <img alt="" src=""/>
+                            <span style="display:none" class="name"></span>
+                            <button onclick="comparison_remove_handler(event)" class="frx top_right">X</button>
+                        </td></template>
+                    </tr>
+                    <tr> <th>Item</th>
+                        <template class="names"><td>
+                            <div>
+                                <span class="price"></span>
+                        
+                            </div>
+                        </td></template>
+                    </tr>
+                    <tr> <th>Nutrition</th>
+                        <template class="nutrition"><td>
+                            <div>
+                                <span class="mass"></span> ml
+                            </div> <!-- shut up it's basically the same thing for soup -->
+                            <div>
+                                <span class="kcal"></span> kcal
+                            </div>
+                        </td></template>
+                    </tr>
+                    <tr> <th>Dietary</th>
+                        <template class="diet"><td>
+                            <div class="meat"></div>
+                            <div class="nuts"></div>
+                        </td></template>
+                    </tr><th></th>
+                        <template class="cart"><td>
+                            <button onclick="add_to_cart_mimicry(event)"
+                            class="trim">Add to Cart
+                             <span class="quantity">0</span></button>
+                        </td></template>
+                    </tr>
+                </tbody></template>
+            </table>
+            <h3>Related Items:</h3>
+            <ul class="related-items left-to-right">
+                <template>
+                    <li>
+                        <img alt="" class="picture" src=""
+                             title="Drag and drop onto table to add item"
+                             draggable="true" ondragstart="register_item_name(event)"/>
+                        <div class="name"></div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </body>
+</html>
